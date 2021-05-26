@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+function Food({name}){
+  return(
+    <h2>I like {name} </h2>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>hello</h1>
+       <Food name="chicken" source={true} kind={["뿌링클",1,2]} />
     </div>
   );
 }
+
 
 export default App;
